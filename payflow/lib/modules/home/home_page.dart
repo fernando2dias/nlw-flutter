@@ -63,7 +63,6 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                 controller.SetPage(0);
                 setState(() {
-
                 });
                 },
                 icon: Icon(
@@ -72,7 +71,7 @@ class _HomePageState extends State<HomePage> {
                 )),
             GestureDetector(
               onTap: (){
-                print('clicou');
+               Navigator.pushNamed(context, '/barcode_scanner');
               },
               child: Container(
                 height: 56,
@@ -91,7 +90,6 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   controller.SetPage(1);
                   setState(() {
-
                   });
                 },
                 icon: Icon(
